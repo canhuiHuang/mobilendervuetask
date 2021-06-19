@@ -1,9 +1,7 @@
 <template>
   <div class="contenido">
     <div class="topbar">
-      <h1 class="title">
-        Buscar créditos grupales
-      </h1>
+      <h1 class="title">Buscar créditos grupales</h1>
       <router-link to="/home/creditosGrupales/inspeccionar"
         ><button class="btn" @click="onClick()">
           <i class="fas fa-plus main-color"></i>INSPECCIONAR
@@ -18,7 +16,7 @@
         :labelMode="true"
       />
       <RowItem
-        v-for="(grupo,index) in creditos_grupales"
+        v-for="(grupo, index) in creditos_grupales"
         :data="grupo"
         :fractions="[1, 1, 2, 1, 1, 1, 1, 1]"
         :key="index"
@@ -28,6 +26,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 import RowItem from "../components/RowItem.vue";
 export default {
   name: "CreditosGrupales",
@@ -55,115 +54,117 @@ export default {
         return "text_color_red";
       }
     },
-    async fetchData() {
-      // Fake backend local data. Run this for dev fake-backend.
-      //const res = await fetch("http://localhost:5000/creditos_grupales");
-      
-      // Online fake backend
-      const res = await fetch("https://my-json-server.typicode.com/canhuiHuang/vuetask/creditos_grupales");
-      const data = await res.json();
+    fetchData() {
+      return axios
+        .get(
+          "https://my-json-server.typicode.com/canhuiHuang/vuetask/creditos_grupales"
+        )
+        .then((res) => {
+          const data = res.data;
+          /* Set up the array of item rows to display them */
+          data.forEach((creditos_grupal) => {
+            const {
+              archivo_name,
+              expediccion,
+              calidad_de_informacion,
+              estatus,
+              finalizacion,
+              usuario,
+            } = creditos_grupal;
 
-      /* Set up the array of item rows to display them */
-      data.forEach((creditos_grupal) => {
-        const {
-          archivo_name,
-          expediccion,
-          calidad_de_informacion,
-          estatus,
-          finalizacion,
-          usuario,
-        } = creditos_grupal;
+            const row = [];
 
-        const row = [];
+            // Archivo
+            row.push({
+              type: "file",
+              content: archivo_name,
+              src: "",
+              action: null,
+              classes: "big_font",
+              label: "Archivo",
+            });
 
-        // Archivo
-        row.push({
-          type: "file",
-          content: archivo_name,
-          src: "",
-          action: null,
-          classes: "big_font",
-          label: "Archivo",
+            // Expedicion
+            row.push({
+              type: "text",
+              content: expediccion,
+              src: "",
+              classes: "text_center",
+              action: null,
+              label: "Expedición",
+            });
+
+            // % Calidad de información
+            row.push({
+              type: "text",
+              content: calidad_de_informacion + "%",
+              src: "",
+              classes: `text_center no_left_padding no_right_padding`,
+              action: null,
+              label: "% Calidad de información",
+            });
+
+            // Estatus
+            row.push({
+              type: "text",
+              content: estatus,
+              src: "",
+              classes: `${this.get_status_color(estatus)}`,
+              action: null,
+              label: "Estatus",
+            });
+
+            // Finalización
+            row.push({
+              type: "text",
+              content: finalizacion,
+              src: "",
+              classes: `text_center`,
+              action: null,
+              label: "Finalización",
+            });
+
+            // Usuario
+            row.push({
+              type: "text",
+              content: "@" + usuario,
+              src: "",
+              classes: "",
+              action: null,
+              label: "Usuario",
+            });
+
+            // Acciones
+            row.push({
+              type: "icon",
+              content: "fas fa-file-download",
+              src: "",
+              classes: "text_center",
+              action: null,
+              label: "Acciones",
+            });
+
+            // Icon_button
+            row.push({
+              type: "icon",
+              content: "fas fa-chevron-right",
+              src: "",
+              classes: "to_right",
+              action: null,
+              label: "",
+            });
+
+            this.creditos_grupales.push(row);
+          });
+        })
+        .catch((err) => {
+          console.error(err);
         });
-
-        // Expedicion
-        row.push({
-          type: "text",
-          content: expediccion,
-          src: "",
-          classes: "text_center",
-          action: null,
-          label: "Expedición",
-        });
-
-        // % Calidad de información
-        row.push({
-          type: "text",
-          content: calidad_de_informacion + "%",
-          src: "",
-          classes: `text_center no_left_padding no_right_padding`,
-          action: null,
-          label: "% Calidad de información",
-        });
-
-        // Estatus
-        row.push({
-          type: "text",
-          content: estatus,
-          src: "",
-          classes: `${this.get_status_color(estatus)}`,
-          action: null,
-          label: "Estatus",
-        });
-
-        // Finalización
-        row.push({
-          type: "text",
-          content: finalizacion,
-          src: "",
-          classes: `text_center`,
-          action: null,
-          label: "Finalización",
-        });
-
-        // Usuario
-        row.push({
-          type: "text",
-          content: "@" + usuario,
-          src: "",
-          classes: "",
-          action: null,
-          label: "Usuario",
-        });
-
-        // Acciones
-        row.push({
-          type: "icon",
-          content: "fas fa-file-download",
-          src: "",
-          classes: "text_center",
-          action: null,
-          label: "Acciones",
-        });
-
-        // Icon_button
-        row.push({
-          type: "icon",
-          content: "fas fa-chevron-right",
-          src: "",
-          classes: "to_right",
-          action: null,
-          label: "",
-        });
-
-        this.creditos_grupales.push(row);
-      });
     },
   },
-  async created() {
+  created() {
     this.setCurrentPage("Créditos grupales");
-    await this.fetchData();
-    console.log("created ", this.creditos_grupales[0]);
+    this.fetchData();
   },
 };
 </script>

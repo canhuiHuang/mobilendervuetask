@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1624055533487" clover="3.2.0">
+  <project timestamp="1624055533487" name="All files">
+    <metrics statements="65" coveredstatements="19" conditionals="10" coveredconditionals="0" methods="22" coveredmethods="8" elements="97" coveredelements="27" complexity="0" loc="65" ncloc="65" packages="2" files="4" classes="4"/>
+    <package name="components">
+      <metrics statements="11" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="RowItem.vue" path="D:\gitproject\mobilendervuetask\src\components\RowItem.vue">
+        <metrics statements="11" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="88" count="2" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="105" count="0" type="stmt"/>
+        <line num="106" count="0" type="stmt"/>
+        <line num="108" count="0" type="stmt"/>
+        <line num="113" count="0" type="stmt"/>
+        <line num="114" count="0" type="stmt"/>
+        <line num="116" count="0" type="stmt"/>
+        <line num="117" count="0" type="stmt"/>
+        <line num="118" count="0" type="stmt"/>
+        <line num="120" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="views">
+      <metrics statements="54" coveredstatements="18" conditionals="10" coveredconditionals="0" methods="18" coveredmethods="8"/>
+      <file name="CreditosGrupales.vue" path="D:\gitproject\mobilendervuetask\src\views\CreditosGrupales.vue">
+        <metrics statements="27" coveredstatements="6" conditionals="6" coveredconditionals="0" methods="8" coveredmethods="3"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="49" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="53" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="164" count="1" type="stmt"/>
+        <line num="169" count="0" type="stmt"/>
+        <line num="171" count="0" type="stmt"/>
+        <line num="179" count="0" type="stmt"/>
+        <line num="181" count="0" type="stmt"/>
+        <line num="184" count="0" type="stmt"/>
+        <line num="194" count="0" type="stmt"/>
+        <line num="204" count="0" type="stmt"/>
+        <line num="214" count="0" type="stmt"/>
+        <line num="224" count="0" type="stmt"/>
+        <line num="234" count="0" type="stmt"/>
+        <line num="244" count="0" type="stmt"/>
+        <line num="254" count="0" type="stmt"/>
+        <line num="263" count="0" type="stmt"/>
+        <line num="267" count="0" type="stmt"/>
+        <line num="273" count="1" type="stmt"/>
+      </file>
+      <file name="Home.vue" path="D:\gitproject\mobilendervuetask\src\views\Home.vue">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+      </file>
+      <file name="Inspeccionar.vue" path="D:\gitproject\mobilendervuetask\src\views\Inspeccionar.vue">
+        <metrics statements="25" coveredstatements="10" conditionals="4" coveredconditionals="0" methods="9" coveredmethods="4"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="69" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="85" count="2" type="stmt"/>
+        <line num="88" count="0" type="stmt"/>
+        <line num="91" count="0" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
+        <line num="94" count="0" type="stmt"/>
+        <line num="96" count="0" type="stmt"/>
+        <line num="106" count="0" type="stmt"/>
+        <line num="116" count="0" type="stmt"/>
+        <line num="126" count="0" type="stmt"/>
+        <line num="135" count="0" type="stmt"/>
+        <line num="139" count="0" type="stmt"/>
+        <line num="144" count="1" type="stmt"/>
+        <line num="146" count="1" type="stmt"/>
+        <line num="147" count="1" type="stmt"/>
+        <line num="148" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

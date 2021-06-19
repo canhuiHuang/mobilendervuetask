@@ -1,10 +1,9 @@
-import { expect } from "@jest/globals";
-import { mount } from "@vue/test-utils";
-import Home from "../components/Home.vue";
+import { shallowMount } from "@vue/test-utils";
+import Home from "../../src/views/Home.vue";
 
 describe("Home Component", () => {
-  test("Home tiene rutas para creditosGrupales & listaSoftwares.", async () => {
-    const wrapper = mount(Home, {
+  test("Tiene rutas para creditosGrupales & listaSoftwares.", async () => {
+    const wrapper = shallowMount(Home, {
       props: { setCurrentPage: Function },
     });
     const routerElements = wrapper.findAll("router-link");
@@ -26,3 +25,4 @@ describe("Home Component", () => {
     expect(has_creditosGrupales && has_listaSoftwares).toBe(true);
   });
 });
+

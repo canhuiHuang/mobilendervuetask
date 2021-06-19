@@ -145,7 +145,6 @@ export default {
 
     this.fetchData(1);
     this.fetchData(2);
-    console.log(this.clientsData);
   },
 };
 </script>
