@@ -9,27 +9,38 @@
 
 ## Instrucciones para ejecutar
 
-Descarga o clona el repo.
+Descarga y descomprime el zip o clona el repo.
 
 Abre la consola, CMD o bash en el directorio donde está el proyecto. (.../mobilendervuetask-master)
 
-Ejecuta los siguientes comandos. (npm install puede tomar un buen tiempo instalando las dependencias)
+Para asegura que la consola esté abierta en el directorio del proyecto. Copia el directorio de tu carpeta mobilendervuetask-master y escribe esto en la consola:
+```bash
+cd <directorio>
+```
+Ejemplo:
+```bash
+cd C:\descargas\mobilendervuetask
+```
+
+
+### Ejecuta los siguientes comandos. (npm install puede tomar un buen tiempo instalando las dependencias)
 ```bash
 npm install
 npm run serve
 ```
-Después de la espera, esto aparecerá en la consola:
+### Después de la espera, esto aparecerá en la consola:
 ```bash
 App running at:
   - Local:   http://localhost:8080/
   - Network: http://192.168.1.13:8080/
 ```
-Abre el navegador y entra a una de esas direcciones.
-
-### También puedes ver el demo online aquí: <a href='https://frontendui.netlify.app/#/'>frontendui.netlify.app/</a>
+### Abre el navegador y entra a una de esas direcciones.
 <br>
 
-## Detalles
+## También puedes ver el demo online aquí: <a href='https://frontendui.netlify.app/#/'>frontendui.netlify.app/</a>
+<br>
+
+# Detalles
 
 ### La aplicación tiene 6 vistas, organizadas así:
 
