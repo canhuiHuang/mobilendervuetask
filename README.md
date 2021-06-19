@@ -4,8 +4,32 @@
 
 <br>
 <p>
-  La aplicación es desarrolada en Vue.js, no se utilizó ninguna librería o preprocesadores de estilos. Se usó font-awesome para para los íconos. Y se utilizaron estas librerías: <a href='https://router.vuejs.org/'>vue-router</a> para el routing, <a href='https://www.npmjs.com/package/axios'>axios</a> para http requests. No se utilizó ninguna herramienta de manejo de estados. 
+  La aplicación es desarrollada en Vue.js, no se utilizó ninguna librería o preprocesadores de estilos. Se usó font-awesome para para los íconos. Y se utilizaron estas librerías: <a href='https://router.vuejs.org/'>vue-router</a> para el routing, <a href='https://www.npmjs.com/package/axios'>axios</a> para http requests. No se utilizó ninguna herramienta de manejo de estados. 
 </p>
+
+## Instrucciones para ejecutar
+
+Descarga o clona el repo.
+
+Abre la consola, CMD o bash en el directorio donde está el proyecto. (.../mobilendervuetask-master)
+
+Ejecuta los siguientes comandos. (npm install puede tomar un buen tiempo instalando las dependencias)
+```bash
+npm install
+npm run serve
+```
+Después de la espera, esto aparecerá en la consola:
+```bash
+App running at:
+  - Local:   http://localhost:8080/
+  - Network: http://192.168.1.13:8080/
+```
+Abre el navegador y entra a una de esas direcciones.
+
+### También puedes ver el demo online aquí: <a href='https://frontendui.netlify.app/#/'>frontendui.netlify.app/</a>
+<br>
+
+## Detalles
 
 ### La aplicación tiene 6 vistas, organizadas así:
 
