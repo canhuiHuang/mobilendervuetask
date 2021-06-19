@@ -1,3 +1,3 @@
 
 
-<img src='./documentacion/imgs/vistas' />
+<img src='./documentacion/imgs/vistas.jpg' />
