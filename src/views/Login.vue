@@ -65,6 +65,7 @@ export default {
 
           setCurrentPage("Home");
           window.location.href = "/#/home";
+          window.location.reload();
         })
         .catch(function (error) {
           console.log(error, error.response);
