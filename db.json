@@ -1,0 +1,62 @@
+{
+    "creditos_grupales": [
+        {
+            "archivo_name": "clientes_credito.xml",
+            "expediccion": "02/08/20",
+            "calidad_de_informacion": "90",
+            "estatus": "Finalizado",
+            "finalizacion": "02/08/21",
+            "usuario": "goytia",
+            "cambios": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, praesentium"
+        },
+        {
+            "archivo_name": "clientes_contrato.xml",
+            "expediccion": "12/08/20",
+            "calidad_de_informacion": "55",
+            "estatus": "En proceso",
+            "finalizacion": "12/08/21",
+            "usuario": "statech",
+            "cambios": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque"
+        },
+        {
+            "archivo_name": "clientes_credito.xml",
+            "expediccion": "24/08/20",
+            "calidad_de_informacion": "87",
+            "estatus": "Finalizado",
+            "finalizacion": "24/08/21",
+            "usuario": "goytia",
+            "cambios": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore"
+        },
+        {
+            "archivo_name": "contrato_clientes.xml",
+            "expediccion": "30/08/20",
+            "calidad_de_informacion": "88",
+            "estatus": "Rechazado",
+            "finalizacion": "30/08/21",
+            "usuario": "itacacapital",
+            "cambios": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, facere voluptatem"
+        }
+    ],
+    "listado_de_softwares": [
+        {
+            "name": "Siebel",
+            "sponsor": "Crédito Grupal"
+        },
+        {
+            "name": "Bantotal",
+            "sponsor": "Crédito Grupal"
+        },
+        {
+            "name": "Mobilender",
+            "sponsor": "Crédito Grupal"
+        },
+        {
+            "name": "Alivio",
+            "sponsor": "Crédito Grupal"
+        },
+        {
+            "name": "Itaca Capital",
+            "sponsor": "Crédito Grupal"
+        }
+    ]
+}
