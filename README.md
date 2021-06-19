@@ -73,23 +73,23 @@ Y cada element td es un objecto:
 
 <img src='./documentacion/imgs/RowItem.png' />
 
-### El `objecto` td
+### El objecto td
 
 | Key       | value<type>: args                                                   | Description                                                                                                            |
 | --------- | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `type`    | `<String>`: `“text”`, `“numberBox”`, `“file”`, `“imgUrl”`, `“icon”` | Tipo de contenido del td.                                                                                              |
-| `content` | `<String>`                                                          | Es el contenido de `text`, el nombre del `file`, el numero de `numberBox`, y las `classes` para el icono font-awesome. |
+| type    | `<String>`: `“text”`, `“numberBox”`, `“file”`, `“imgUrl”`, `“icon”` | Tipo de contenido del td.                                                                                              |
+| content | `<String>`                                                          | Es el contenido de `text`, el nombre del `file`, el numero de `numberBox`, y las `classes` para el icono font-awesome. |
 | `src`     | `<String>`                                                          | El link de la imagen, en caso de type: `“imgUrl”`.                                                                     |
-| `classes` | `<String>`                                                          | Personaliza posición o tamaño del contenido con args/classes como `no_left_padding` o `big_font`.                      |
-| `action`  | `Function`                                                          | Por el momento, esto no hace nada, pero está reservado para accionar funciones al momento de interactuar con este td.  |
-| `label`   | `<String>`                                                          | El label de este td.                                                                                                   |
+| classes | `<String>`                                                          | Personaliza posición o tamaño del contenido con args/classes como `no_left_padding` o `big_font`.                      |
+| action  | `Function`                                                          | Por el momento, esto no hace nada, pero está reservado para accionar funciones al momento de interactuar con este td.  |
+| label   | `<String>`                                                          | El label de este td.                                                                                                   |
 
-### `Props` de RowItem
+### Props de RowItem
 
 | Prop `Mandatorio` | value<type>        | Description                                                                                                                                                                                                                                 |
 | ----------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `data`            | `List<objecto td>` | RowItem tomará esta lista y creará un row rellenado con esos elementos td.                                                                                                                                                                  |
-| `fraction`        | `List<number>`     | Fraction es una lista de números que indica la proporción del ancho del row que cada elemento td de la lista data va a tomar. La lista fraction tiene que tener el mismo tamaño (fractionList.length === data.length) que la lista de data. |
+| data            | `List<objecto td>` | RowItem tomará esta lista y creará un row rellenado con esos elementos td.                                                                                                                                                                  |
+| fraction        | `List<number>`     | Fraction es una lista de números que indica la proporción del ancho del row que cada elemento td de la lista data va a tomar. La lista fraction tiene que tener el mismo tamaño (fractionList.length === data.length) que la lista de data. |
 
 <br>
 <img src='./documentacion/imgs/row_of_tds.png' />
@@ -99,7 +99,7 @@ Por ejemplo, para un crear un RowItem de proporciones similares, la lista fracti
 
 | Prop `Opcional` | value<type>                  | Description                                                 |
 | --------------- | ---------------------------- | ----------------------------------------------------------- |
-| `labelMode`     | `<boolean>` default: `false` | Al pasar labelMode: `true`, se creara un RowItem de labels. <img src='./documentacion/imgs/td_labels.JPG' width="400"/>|
-| `link` | `<String>` default: `""` | Al pasar un link, RowItem sera clickeable, y redireccionara el browser al link indicado.
+| labelMode     | `<boolean>` default: `false` | Al pasar labelMode: `true`, se creara un RowItem de labels. <img src='./documentacion/imgs/td_labels.JPG' width="400"/>|
+| link | `<String>` default: `""` | Al pasar un link, RowItem sera clickeable, y redireccionara el browser al link indicado.
 
 Aplicación hecho por Canhui Huang.
