@@ -10,14 +10,10 @@
 ### La aplicación tiene 6 vistas, organizadas así:
 
 <img src='./documentacion/imgs/vistas.jpg' height="420" />
-<br>
-<br>
 
 ### Este es el layout/diseño de la aplicación:
 
 <img src='./documentacion/imgs/appLayout.jpg' height="420" />
-<br>
-<br>
 
 <h2>Vistas</h2>
 
@@ -47,14 +43,10 @@ Al estar logueado, se podrá desloguearse con el menú desplegable el component 
 
 <img src='./documentacion/imgs/menuDesplegable.jpg' />
 <br>
-<br>
 
 ### Se usó vue-utils, vue-jest y se realizó pruebas unitarias simples del UI
 
 <img src='./documentacion/imgs/jest_test.png' />
-<br>
-<br>
-<br>
 <br>
 
 # Componente `RowItem`
@@ -82,9 +74,6 @@ Y cada element td es un objecto:
 <img src='./documentacion/imgs/RowItem.png' />
 
 ### El `objecto` td
-
-Key `type`<br>
-`Values`: `“text”, “numberBox”, “file”, “imgUrl”, “icon”`
 
 | Key       | value<type>: args                                                   | Description                                                                                                            |
 | --------- | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
