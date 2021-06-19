@@ -23,7 +23,8 @@ cd C:\descargas\mobilendervuetask
 ```
 
 
-### Ejecuta los siguientes comandos. (npm install puede tomar un buen tiempo instalando las dependencias)
+### Ejecuta los siguientes comandos.
+(npm install puede tomar un buen tiempo instalando las dependencias)
 ```bash
 npm install
 npm run serve
