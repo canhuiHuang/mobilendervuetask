@@ -19,10 +19,8 @@
         <li>
           <a href="#"><i class="fas fa-cog"></i>Configuración</a>
         </li>
-        <li>
-          <button @click="logout()" href="#">
-            <i class="fas fa-sign-out-alt"></i>Log out
-          </button>
+        <li @click="logout()">
+          <button href="#"><i class="fas fa-sign-out-alt"></i>Log out</button>
         </li>
       </ul>
     </div>
@@ -96,6 +94,13 @@ export default {
 
 
 <style scoped>
+button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
 .navigation {
   display: flex;
   align-items: center;
