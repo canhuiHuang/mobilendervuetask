@@ -20,9 +20,9 @@
           <a href="#"><i class="fas fa-cog"></i>Configuración</a>
         </li>
         <li>
-          <a @click="logout()" href="#"
-            ><i class="fas fa-sign-out-alt"></i>Log out</a
-          >
+          <button @click="logout()" href="#">
+            <i class="fas fa-sign-out-alt"></i>Log out
+          </button>
         </li>
       </ul>
     </div>
@@ -81,6 +81,8 @@ export default {
       localStorage.removeItem("id");
       this.user_name = "";
       this.avatar_url = "";
+
+      window.location.reload();
     },
   },
   created() {
