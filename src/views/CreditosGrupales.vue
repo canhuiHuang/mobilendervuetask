@@ -57,7 +57,7 @@ export default {
     fetchData() {
       return axios
         .get(
-          "https://my-json-server.typicode.com/canhuiHuang/vuetask/creditos_grupales"
+          "https://my-json-server.typicode.com/canhuiHuang/mobilendervuetask/creditos_grupales"
         )
         .then((res) => {
           const data = res.data;

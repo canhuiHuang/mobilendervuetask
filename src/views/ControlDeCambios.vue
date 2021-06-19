@@ -52,7 +52,7 @@ export default {
 
           // Online fake backend
           .get(
-            "https://my-json-server.typicode.com/canhuiHuang/vuetask/creditos_grupales"
+            "https://my-json-server.typicode.com/canhuiHuang/mobilendervuetask/creditos_grupales"
           )
           .then((res) => {
             const creditos_grupales = res.data;

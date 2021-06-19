@@ -129,7 +129,7 @@ export default {
 
           // Online fake backend
           .get(
-            "https://my-json-server.typicode.com/canhuiHuang/vuetask/listado_de_softwares"
+            "https://my-json-server.typicode.com/canhuiHuang/mobilendervuetask/listado_de_softwares"
           )
           .then((res) => {
             const lista_de_softwares = res.data;
