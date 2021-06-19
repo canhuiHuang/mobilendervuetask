@@ -64,7 +64,7 @@ export default {
           );
 
           setCurrentPage("Home");
-          window.location.href = "/home";
+          window.location.href = "/#/home";
         })
         .catch(function (error) {
           console.log(error, error.response);
@@ -83,7 +83,7 @@ export default {
     this.setCurrentPage("Login");
     if (localStorage.email) {
       this.setCurrentPage("Home");
-      window.location.href = "/home";
+      window.location.href = "/#/home";
     }
   },
 };
