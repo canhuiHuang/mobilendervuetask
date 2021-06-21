@@ -57,7 +57,7 @@ export default {
   name: "ListaSoftwares",
   props: {
     setCurrentPage: {
-      type: Function
+      type: Function,
     },
   },
   components: {
@@ -160,7 +160,7 @@ export default {
       if (this.new_software_name !== "") {
         axios
           .post(
-            "https://my-json-server.typicode.com/canhuiHuang/vuetask/listado_de_softwares",
+            "https://my-json-server.typicode.com/canhuiHuang/mobilendervuetask/listado_de_softwares",
             data,
             {
               headers: headers,

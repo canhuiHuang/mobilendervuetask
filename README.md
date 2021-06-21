@@ -138,4 +138,8 @@ Por ejemplo, para un crear un RowItem de proporciones similares, la lista fracti
 | labelMode       | `<boolean>` default: `false` | Al pasar labelMode: `true`, se creara un RowItem de labels. <img src='./documentacion/imgs/td_labels.JPG' width="400"/> |
 | link            | `<String>` default: `""`     | Al pasar un link, RowItem sera clickeable, y redireccionara el browser al link indicado.                                |
 
+
+
+
+
 Aplicación hecho por Canhui Huang.
