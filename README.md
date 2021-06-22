@@ -8,6 +8,7 @@
 </p>
 
 ## Instrucciones para ejecutar
+Instalar Node.js su sistema si no lo tiene instalado (https://nodejs.org/en/)
 
 Descarga y descomprime el zip o clona el repo.
 
@@ -73,7 +74,7 @@ Al navegar por diferentes vistas, lo único que cambiaría en la aplicación es 
 ```
 
 `Login` es la única vista que no tiene este diseño, que consite en un simple form que toma input, y tiene la funcionalidad de loguear.
-Los componentes vistas de `Crédito Grupales`, `Control de cambios`, y `Listado de Softwares` crean sus items con los datos consumiendo de un backend, en este caso, es un restful API falso (https://my-json-server.typicode.com/canhuiHuang/vuetask/) que tiene los datos mostrado en las imágenes del documento de PRUEBA DE PROGRAMACIÓN FRONTEND para hacer GET requests y simular POST requests. Se usó la librería axios para hacer los http calls.
+Los componentes vistas de `Crédito Grupales`, `Control de cambios`, y `Listado de Softwares` crean sus items con los datos consumiendo de un backend, en este caso, es un restful API falso (https://my-json-server.typicode.com/canhuiHuang/mobilendervuetask/) que tiene los datos mostrado en las imágenes del documento de PRUEBA DE PROGRAMACIÓN FRONTEND para hacer GET requests y simular POST requests. Se usó la librería axios para hacer los http calls.
 Se puede simular el logueo con el `correo` de cualquier usuario de https://reqres.in/ con cualquier contraseña. La sesión es persistente con la información guardada en localStorage.
 Al estar logueado, se podrá desloguearse con el menú desplegable del component de perfil en la parte superior derecha.
 
