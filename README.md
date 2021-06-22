@@ -8,7 +8,7 @@
 </p>
 
 ## Instrucciones para ejecutar
-Instalar Node.js su sistema si no lo tiene instalado (https://nodejs.org/en/)
+Instalar Node.js su sistema si no lo tiene instalado (https://nodejs.org/)
 
 Descarga y descomprime el zip o clona el repo.
 
